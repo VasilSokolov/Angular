@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="content/app.css">
+</head>
+<body ng-app="myApplication" ng-cloak>
+<div ng-controller="HomeCtrl">
+
+    <form name="registrationForm">
+        <input type="text" required placeholder="First name" ng-model="user.firstName"/>
+        <input type="text" placeholder="Last name" ng-model="user.lastName"/>
+        <input type="text" placeholder="Age" ng-model="user.age"/>
+        <button ng-click="register(user, registrationForm )">Resgister</button>
+    </form>
+  </div>
+
+
+  <div ng-view></div>
+  <footer ng-controller="FooterCtrl">
+      {{footer}}
+  </footer>
+
+
+  <script src="libs/angular.js"></script>
+  <script src="libs/angular-route.js"></script>
+  <script src="libs/angular-sanitize.min.js"></script>
+  <script src="libs/angular-resource.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/HomeCtrl.js"></script>
+  <script src='app/controllers/FooterCtrl.js'></script>
+  <script src='app/services/data.js'></script>
+  <script src="app/services/randomNumber.js"></script>
+  <script src='app/filters/statusFilter.js'></script>
+</body>
+</html>
