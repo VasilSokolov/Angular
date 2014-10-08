@@ -2,9 +2,8 @@
 
 myApp.controller('HomeCtrl',
     function HomeCtrl($scope, data){
-        data.getDataById(5, function(user){
-            $scope.currentUserName = user.name;
-        });
+        $scope.search = items;
+
 
         $scope.register = function(user, regForm){
             if (regForm.$valid) {
