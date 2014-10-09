@@ -6,6 +6,7 @@ myApp.directive('peshoInformation', function (){
         template: 'app/views/directives/pesho-directives.html',
         scope: {
             search: '='
-        }
+        },
+        replace: true
     }
 });
