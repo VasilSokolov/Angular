@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Cars</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-app="carsApp" ng-controller="PageController">
+
+<div class="navbar navbar-default ">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Super Cars</a>
+
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Add Cars</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            Zdrasti
+
+        </div>
+    </div>
+</div>
+
+<footer class="text-center">
+    <hr/>
+    <small>
+        Mark: {{ mark }}; Date {{ date.year }}/{{ date.month }}/{{ date.day }}
+    </small>
+</footer>
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/PageController.js"></script>
+</body>
+</html>
